@@ -9,6 +9,7 @@ import Experience from './components/Experience';
 import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import VideoBanner from './components/VideoBanner';
 
 function App() {
   return (
@@ -23,8 +24,10 @@ function App() {
       <Testimonials />
       <Blog />
       <Contact />
+      <VideoBanner />
     </div>
   );
+
 }
 
 export default App;

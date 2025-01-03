@@ -1,4 +1,3 @@
-import React from 'react';
 import { personalInfo } from '../data/personalInfo';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
@@ -56,7 +55,7 @@ export default function About() {
             <div className="relative bg-white p-3 rounded-2xl shadow-xl">
               <img
                 src="/api/placeholder/800/600"
-                alt="Profile"
+                alt="Profil Resmi"
                 className="rounded-xl w-full object-cover"
               />
               <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-slate-900/5"></div>

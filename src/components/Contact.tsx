@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, MessageSquare } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 export default function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    try {
+      const response = await fetch('http://localhost:4000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (response.ok) {
+        alert('Mesajınız başarıyla gönderildi.');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        alert('Mesaj gönderilirken bir hata oluştu.');
+      }
+    } catch (error) {
+      alert('Mesaj gönderilirken bir hata oluştu.');
+    }
+  };
+
   return (
     <section id="iletisim" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,7 +38,7 @@ export default function Contact() {
         </div>
         
         <div className="max-w-2xl mx-auto">
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Ad Soyad
@@ -20,6 +46,8 @@ export default function Contact() {
               <input
                 type="text"
                 id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
               />
             </div>
@@ -31,6 +59,8 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
               />
             </div>
@@ -42,6 +72,8 @@ export default function Contact() {
               <textarea
                 id="message"
                 rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
               />
             </div>

@@ -1,23 +1,16 @@
 export const experience = [
   {
-    company: "Tech Solutions Inc.",
-    position: "Senior Full Stack Developer",
-    period: "2021 - Günümüz",
-    description: "Kurumsal müşteriler için web uygulamaları geliştirme, teknik ekip liderliği.",
-    technologies: ["React", "Node.js", "AWS"]
+    company: "Ono Yazılm",
+    position: "Lise Stajyeri",
+    period: "2023-2024",
+    description: "Web Sitesi , Yapay Zeka , Görüntü Etiketleme, Yapay Zeka , Office Programları,Web Tasarım , Windows Form Uygulamaları, Veri Tabanı Yönetimi , Muhasebe Uygulaması",
+    technologies: ["HTML", "CSS", "Javascript","Python","C#","SQL","Microsoft Office","Php","PhpMyAdmin"]
   },
   {
-    company: "Digital Innovations",
-    position: "Full Stack Developer",
-    period: "2019 - 2021",
-    description: "E-ticaret platformları ve mobil uygulamalar geliştirme.",
-    technologies: ["React Native", "Python", "PostgreSQL"]
+    company: "Ono Yazılım ",
+    position: "Destek Elemanı",
+    period: "2024-?",
+    description: "Web Sitesi , Yapay Zeka , Görüntü Etiketleme, Yapay Zeka , Office Programları,Web Tasarım , Mobil Uygulama, Veri Tabanı Yönetimi , Masaüstü Geliştirme ,Personel Takip Sistemi",
+    technologies: ["React Native", "Python", "MongoDb","Python , Microsoft Office","Php","PhpMyAdmin","C#","SQL" ,"Laravel" ,"Google","NodeJs"] 
   },
-  {
-    company: "StartupX",
-    position: "Frontend Developer",
-    period: "2018 - 2019",
-    description: "Modern web uygulamaları geliştirme ve UI/UX tasarımı.",
-    technologies: ["React", "TypeScript", "SASS"]
-  }
 ];

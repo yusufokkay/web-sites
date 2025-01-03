@@ -8,7 +8,6 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Referanslar</h2>
-          <p className="text-xl text-gray-600">Müşterilerimizin yorumları</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -20,11 +19,6 @@ export default function Testimonials() {
               <Quote className="h-8 w-8 text-purple-600 mb-4" />
               <p className="text-gray-600 mb-6">{testimonial.text}</p>
               <div className="flex items-center gap-4">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
                 <div>
                   <h4 className="font-semibold">{testimonial.name}</h4>
                   <p className="text-sm text-gray-500">{testimonial.position}</p>

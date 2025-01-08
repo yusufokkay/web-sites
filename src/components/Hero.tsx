@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Merhaba, Ben<br />
+              Hello , I'm<br />
               <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
                 {personalInfo.name}
               </span>

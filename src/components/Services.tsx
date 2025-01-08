@@ -34,9 +34,9 @@ export default function Services() {
     <div id="hizmetler" className="py-32 bg-gradient-to-br from-slate-50 via-white to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-slate-800 mb-4">Hizmetlerimiz</h2>
+          <h2 className="text-5xl font-bold text-slate-800 mb-4">Services</h2>
           <div className="h-1.5 w-32 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 font-light">Size özel profesyonel çözümler sunuyoruz</p>
+          <p className="text-xl text-slate-600 font-light">We offer customised professional solutions</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

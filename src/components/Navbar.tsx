@@ -6,15 +6,15 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navItems = [
-    { href: "#anasayfa", label: "Ana Sayfa" },
-    { href: "#hakkimda", label: "Hakkımda" },
-    { href: "#yetenekler", label: "Yetenekler" },
-    { href: "#hizmetler", label: "Hizmetler" },
-    { href: "#projeler", label: "Projeler" },
-    { href: "#deneyim", label: "Deneyim" },
-    { href: "#referanslar", label: "Referanslar" },
+    { href: "#anasayfa", label: "Home" },
+    { href: "#hakkimda", label: "About Me" },
+    { href: "#yetenekler", label: "Skills" },
+    { href: "#hizmetler", label: "Services" },
+    { href: "#projeler", label: "Projects" },
+    { href: "#deneyim", label: "Expreince" },
+    { href: "#referanslar", label: "Referance" },
     { href: "#blog", label: "Blog" },
-    { href: "#iletisim", label: "İletişim" }
+    { href: "#iletisim", label: "Contact" }
   ];
 
   return (
